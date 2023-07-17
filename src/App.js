@@ -51,35 +51,8 @@ function App() {
     <>
       <Navbar title = "TextUtils" about = "About" toggleMode={handleModeChange} mode= {mode}/>
       <Alert alert={alertObj}></Alert>
-{/* 
-      <BrowserRouter>
       <Routes>
-        <Route path="/" element={
-            <div className='container'>
-            <TextForm heading="Enter the text to analyze" alert = {handleAlert} />
-          </div>
-        }>
-          <Route path="/about" element={<About/>} />
-        </Route>
-      </Routes>
-    </BrowserRouter> */}
-
-      {/* <Router>
-        <Switch>
-          <Route path='/about'>
-            <About/>
-          </Route>
-          <Route path='/'>
-            <div className='container'>
-              <TextForm heading="Enter the text to analyze" alert = {handleAlert} />
-            </div>
-          </Route>
-        </Switch>
-      </Router> */}
-
-
-      <Routes>
-        <Route path='/' element={
+        <Route path='/Text-Utils-React-App/' element={
 
           <div className='container'>
               <TextForm heading="Enter the text to analyze" alert = {handleAlert} />
@@ -87,7 +60,7 @@ function App() {
 
         </Route>
 
-        <Route path='/about' element={<About/>}></Route>
+        <Route path='/Text-Utils-React-App/about' element={<About/>}></Route>
       </Routes>
 
     </>
